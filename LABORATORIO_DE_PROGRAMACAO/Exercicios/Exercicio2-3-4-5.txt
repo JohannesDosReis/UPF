@@ -1,0 +1,57 @@
+Exercicio 2: Daily UTC
+
+Faca um codigo que obtenha o valor de horas/minutos/segundos no formaro 99h99m99s e converta para minutos corridos e segundos corridos;
+Ex: 1h33m = 93 min, 1h33m44s = 5624 seg
+Utilize o valor de 'n' retornado por scanf para saber se foi digitado somente hora e min ou todos os valores h m s.
+
+if(n == 2)      if(n == 3)
+{               {
+}               }
+
+
+Exercicio 3: Le' Gambis~
+
+Voce chegou de viagem do Japao e precisa utilizar um barbeador (homens) ou secador de cabelos (mulher) que trouxe de la. Porem, la no japao a rede eh 127v e aqui no RS 220v. Assim, sabendo o basicao da eletronica, voce decide utilizar um resistor de potencia em serie com o aparelho para liga-lo em 220v sem queimar. Assuma que a carga se comporta de forma linear.
+
+Digite o valor da potencia, em W, do aparelho, e, apartir dela, calcule e escreva na tela o valor do resistor em Ohms e a potencia dissipada por ele, em Watts.
+
+Exercicio 4: Warmer Bross
+
+Nestes dias frios, utilizamos um aquecedor portatil, 220v, esses de 750W, para deixar debaixo da mesa e nos aquecer. Suponha que ele tenha um controle de potencia de 5 posicoes: 0, 1..5. Onde, 0 significa desligado, e, proporcionalmente, de 1 a 5 sendo 20% a 100%.
+
+Digite o valor da chave , tipo CHAR, e escreva na tela o nivel e a potencia de operacao do aquecedor. Ex:
+"Aquecedor na posicao 2 esta com 40% e dissipa 300.0 Watts"
+"Aquecedor na posical 5 esta com 100% e dissipa 750.0 Watts"
+
+Desenhe, tambem, uma barra indicativa:
+"[XXXXXXXXXX       ]" No lugar do X utilize um caractere especial de bloco listrado/pontilhado
+
+O valor digitado deve ser um numero inteiro entre 0 e 5. Assim, caso o valor digitado esteja fora desta faixa, deverá ser solicitado um novo valor.
+
+Apos obter a potencia dissipada pelo aquecedor, calcule o quanto ele aqueceu o ambiente. Para isso, considere que o aquecedor aumenta a temperatura em 0.0125 graus para cada 1W dissipado. Voce possui um termometro para saber a temperatura externa, sem influencia do aquecedor.
+
+
+Exercicio 5: Log-In!
+
+Recentemente foi instalado um alarme em uma residencia. Este alarme possui uma senha de 5 digitos. Escreva um programa que leia esta senha, porem, nao escreva na tela o codigo digitado. Neste caso, para cada dgito, escreva um * no lugar. Apos digitada a senha, deve ser pressionada a tecla HOME para efetivar o acesso.
+
+Escolha um numero qualquer de 5 digitos e utilize como sua senha. Verifique o acesso da seguinte forma:
+
+if(Senha == 12345)
+{
+  +------------------------------+
+  |      Access GRANTED!!        |
+  +------------------------------+
+}
+else
+{
+  +------------------------------+
+  |  *** YOU SHALL NOT PASS ***  |
+  +------------------------------+ 
+
+  delay de 2.5 seg, apos, limpar a tela e   entrar novamente com a senha. 
+}
+
+Se o acesso for negado, repetir a entrada com a senha. Se o acesso foi garantido, o programa pode ser finalizado.
+
+

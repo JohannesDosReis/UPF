@@ -1,0 +1,19 @@
+Tipos de preprocessor:
+
+#define		#error		#import		#undef
+#elif		#if		#include	#using
+#else		#ifdef		#line		#endif
+#ifndef		#pragma
+
+
+#ifdef __unix__ /* __unix__ defines Unix systems */
+    # include <unistd.h>
+#elif defined _WIN32 /* _Win32 is 32 or 64 bit Windows systems */
+    # include <windows.h>
+#endif
+
+
+#pragma:
+  warn
+  bounds
+  pack()

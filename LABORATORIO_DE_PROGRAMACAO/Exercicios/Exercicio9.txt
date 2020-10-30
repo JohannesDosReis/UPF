@@ -1,0 +1,15 @@
+Exercicio 9: Mines		\\LCI-3-04
+
+Leia um inteiro 'N' que deve ser no minimo 5 e no maximo 24.
+Crie, dinamicamente, uma matriz do tamanho N x 2N.
+
+Crie, aleatoriamente, 15% de elementos que serao as bombas. Marque-os com o caracter '*'.
+
+Apos, percorra toda a matriz e, para cada elemento que não é uma bomba, preencha com o numero, de 1 a 8, indicando quantas bombas tem ao seu redor.
+Caso nao tenha nenhuma, deixe como espaço em branco ' '.
+
+Apos, desenhe a matriz na tela.
+
+Libere a memoria da matriz alocada.
+
+A nao ser as funções já implementadas, para criar, destruir e exibir, todas as demais NAO devem utilizar indexação por [], somente acesso via ponteiro e incremento/decremento.

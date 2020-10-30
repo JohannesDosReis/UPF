@@ -1,0 +1,17 @@
+Exercicio 6: jogo da forca		\\LCI-3-04
+
+Leia uma string que será utilizada como segredo. Ela devera conter pelo menos 4 letras, e no máximo 20. repita a leitura caso nao tenha.
+
+Monte a tela do jogo e escreva um ’_’ no lugar de cada letra do segredo.
+
+Repita a leitura de várias letras, e a cada vez que a letra digitada for alguma letra existente no segredo, escreva na tela a palavra, porém, com essa letra certa no lugar do ’_’.  
+
+Caso a letra nao exista, desconte uma vida e liste a letra em baixo indicando que não existe na string segredo.
+
+Se as vidas acabarem, escreva na tela uma caixa com o texto GAME OVER em ascii art. Caso a pessoa acerte, escreva YOU WIN em ascii art.
+
+utilize funções para melhor organizar o código!
+REF: http://en.cppreference.com/w/c/string/byte
+
+Apos terminar o jogo, pergunte se deseja jogar novamente.
+Repita o jogo caso a resposta seja S.

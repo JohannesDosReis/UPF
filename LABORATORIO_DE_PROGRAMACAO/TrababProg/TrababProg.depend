@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1511563742 source:c:\users\johan\trababprog\buffer.c
+	"buffer.h"
+
+1511563373 c:\users\johan\trababprog\buffer.h
+	<stdio.h>
+	<stdlib.h>
+	<stdarg.h>
+

@@ -1,0 +1,25 @@
+Exercicio 10: Copy		\\LCI-3-04
+
+Leia um arquivo texto de nome escolhido pelo usuário. Após, crie um outro arquivo texto contendo todas as palavras do arquivo original separadas linha por linha, removendo todos os simbolos não alfa-numéricos (. - , ...)
+
+O nome do arquivo deve ser o mesmo nome do arquivo original acrescido de '-split' ao final do nome. (cuidado com a extensao)
+
+Ex: no arquivo 'coisas.txt' possui: uma, duas e mais letras.
+Vira 'coisas-split.txt' contendo:
+uma
+duas
+e
+mais
+letras
+
+Exercicio 11: Matrix
+
+Faça um programa que leia um arquivo matrix.inf contendo um numero. Verifique se este numero é pelo menos 1 e no maximo 35. Escreva na tela se este valor estiver errado e, caso esteja, sobrescreva o arquivo matrix.inf com o valor padrao de 10.
+
+Caso o valor esteja correto, desenhe na tela a matriz identidade NxN e salve um arquivo matrix.csv no seguinte formato:
+
+1;0;0;0
+0;1;0;0
+0;0;1;0
+0;0;0;1
+ 

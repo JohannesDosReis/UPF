@@ -1,0 +1,56 @@
+Exercicio 13:				\\LCI-3-04
+
+Faça um programa que receba varios parametros como argumento.
+Os parametros devem ser:
+	-d para inteiro: -d 14 -d -55
+	-u para inteiro sem sinal: -u 2 -u 1200
+	-f para float: -f 10.66 -f 22
+	-s para string: -s "Nome" -s Fighter
+
+	atoi, atof, atol ...
+
+O programa deve verificar se os argumentos estao corretos, ou seja:
+	O tipo de acordo com o parametro -x
+	Se a ordem esta correta, -x sem parametro ou parametro sem -x
+
+No inicio deve escrever na tela quantos parametros foram repassados.
+
+Exercicio 14:
+
+Faça tres programas que:
+  1) generate.exe receba como parametro um nome de arquivo -i 'model.ini' 
+     -o 'matriz.dat' e crie uma matriz de acordo com os parametros neste 
+     arquivo.
+  2) process.exe recebe como parametro -f 'matriz.dat' e -o 'operation'
+     operation pode ser: 'average', 'max', 'min', 'display'. As operações
+     exceto a 'display' devem retornar o valor via return(). A media pode
+     ser retornada com 2 casas decimais em inteiro return(Media * 100)
+  3) matriz.exe programa principal que faz a chamada para os outros dois
+
+model.ini:
+row=10
+col=20
+rand_min=10
+rand_max=50
+
+matriz.dat:
+10 20
+x x x x x x x x 
+x x x x x x x x
+x x x x x x x x 
+x x x x x x x x
+x x x x x x x x ...
+
+Exercicio 15:
+
+Faça uma função que recebe parametros variaveis de acordo com uma string:
+LA = latitude (float entre -20 e -30)
+LO = longitude (float entre -40 e -60)
+AL = altitude (inteiro entre 0 e 2500)
+SP = velocidade (float entre 0 e 250)
+HD = direção (inteiro entre 0 e 359)
+
+Caso os parametros estejam validos, retorna um ponteiro alocado em memoria com a seguinte string:
+"GPS:-21.2324,-44.9962,960,120KT,227M"
+      ^LA      ^LO     ^AL ^SP   ^HD
+

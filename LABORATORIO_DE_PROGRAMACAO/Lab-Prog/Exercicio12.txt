@@ -1,0 +1,14 @@
+Exercicio 12: Multiply		\\LCI-3-04
+
+Obtenha o valor de dois numeros inteiros A e B.
+
+Faça a multiplicação de A por B de forma recursiva utilizando apenas somas.
+
+Faça o calculo da divisao e resto do maior pelo menor, de forma recursiva.
+
+Funções:
+
+int Mult(int A, int B);
+int Div(int A, int B);
+int Mod(int A, int B);
+ 

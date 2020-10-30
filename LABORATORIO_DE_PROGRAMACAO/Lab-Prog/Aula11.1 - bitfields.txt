@@ -1,0 +1,61 @@
+char Status	0000.0000
+
+Flag Lights	0000.0001	0x01
+Flag Enabled	0000.0010	0x02
+Flag TxData	0000.0100	0x04
+Flag RxData	0000.1000	0x08
+Flag Debug	1000.0000	0x80
+
+// ativar o debug
+Status |= Debug;
+		0000.0000
+		1000.0000 ou
+		---------
+		1000.0000
+
+// Ativar Tx e Rx
+Status |= TxData | RxData;
+
+Status		1000.0000
+TxData | RxData	0000.1100 ou
+		---------
+		1000.1100
+
+// Desativar o debug
+Status &= ~Debug;
+
+Status		1000.1100
+~Debug		0111.1111 e
+		---------
+		0000.1100
+
+// Inverter a luz
+Status ^= Lights
+
+Status		0000.1100
+Lights		0000.0001 xor
+		---------
+		0000.1101
+
+Status		0000.1101
+Lights		0000.0001 xor
+		---------
+		0000.1100
+
+// Debug ativo?
+if(Status & Debug)
+{
+    // Entao desativa
+    Status &= ~Debug;
+}
+else
+{
+    // Entao ativa
+    Status |= Debug;
+}
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+Exercicio 7: Check Letters		\\LCI-3-04
+
+Faça a leitura de uma string via gets(); esta string deve conter no minimo 30 caracteres e no maximo 70;
+
+Apos, leia uma letra e escreva na tela a string seguido das ocorrencias desta letra sinalizadas com ^ 
+(Utilize o caracter 24 ou 30 para desenhar a seta)
+
+Exemplo:
+Teste de string de 30 ate 70 caracteres. (Letra 't')
+^  ^      ^            ^          ^
+1  2      3            4          5
+
+Exercicio 8: El Crivo
+
+Digite um numero limite para calcular os primos. este limite deve ser de pelo menos 30. Utilize alocação dinamica para criar o vetor.
+
+Escreva na tela estes numeros seguidos da indicação de primo, da mesma forma que o exercicio anterios.
+
+Apos, faça uma medida de tempo entre obter os primos via Crivo e obter via força bruta (divisivel por 1 e por ele mesmo)
+
+Exemplo:
+  1   2   3   4   5   6   7   8   9  10  11  12  13  14
+  ^   ^   ^       ^       ^               ^       ^
+
+ 15  16  17  18  19  20  21  22  23  24  25
+          ^       ^               ^
+
+Crivo: xxx ms
+Bruto: yyy ms
