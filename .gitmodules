@@ -2,3 +2,5 @@
 	url = https://github.com/JohannesDosReis/mapeador_tarefas.git
 [submodule "ENGENHARIA_DE_SOFTWARE/WebIRRemoteControl"]
 	url = https://johannesreis.visualstudio.com/WebIRRemoteControl/_git/WebIRRemoteControl
+[submodule "AUTOMACAO_I/LCD_DISPLAY_STM32F103"]
+	url = https://github.com/JohannesDosReis/LCD_DISPLAY_STM32F103.git
