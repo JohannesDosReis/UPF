@@ -1,0 +1,18 @@
+main()
+{
+    int f1; /* Identifica processo filho 1*/
+    int f2; /* Identifica processo filho 2*/
+    printf("Alo do pai\n");
+    f1 = create_process(codigo_do_filho);
+    wait_process( f1); printf("Filho 1 morreu\n");
+    f2 = create_process(codigo_do_filho);
+    wait_process( f2); printf("Filho 2 morreu\n");
+    exit();
+}
+
+/*Função executada pelos dois processos filhos*/ 
+codigo _do_filho()
+{
+    printf("Alo do filho\n");
+    exit();
+}

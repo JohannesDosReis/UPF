@@ -1,0 +1,70 @@
+Modo Bloco (PARBEGIN/PAREND)
+
+begin
+    S1;
+    S2;
+    parbegin
+        begin
+            S3;
+            parbegin
+                S5;
+                S6;
+            parend
+            S9;
+        end
+        begin
+            S4;
+            parbegin
+                S7;
+                S8;
+            parend
+            S10;
+            S11;
+        end
+    parend
+    S12
+end
+
+Modo process
+
+main(){
+    S1();
+    S2();
+    inf pid_S3 = create_process(function_S3);
+    inf pid_S4 = create_process(function_S4);
+    wait_process(pid_S3);
+    wait_process(pid_S4);
+    S12();
+}
+    
+function_S3(){
+    S3();
+    inf pid_S5 = create_process(function_S5);
+    inf pid_S6 = create_process(function_S6);
+    wait_process(pid_S5);
+    wait_process(pid_S6);
+    S9();
+}
+
+function_S4(){
+    S4();
+    inf pid_S7 = create_process(function_S7);
+    inf pid_S8 = create_process(function_S8);
+    wait_process(pid_S7);
+    wait_process(pid_S8);
+    S10();
+    S11();
+}
+
+function_S5(){
+    S5();
+}
+function_S6(){
+    S6();
+}
+function_S7(){
+    S7();
+}
+function_S8(){
+    S8();
+}
