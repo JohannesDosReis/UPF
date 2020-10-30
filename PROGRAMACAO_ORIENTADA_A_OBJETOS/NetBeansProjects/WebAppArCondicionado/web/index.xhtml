@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+
+    <h:head>
+        <title>Controle de Ar Condicionado</title>
+    </h:head>
+    <h:body>
+        Aparelhos cadastrados
+        <br/>
+        <h:form id="form">      
+            <p:commandButton value="Nova Aparelho" update="form"
+                             actionListener="#{frontAr.criarAparelho()}"/>
+            <br/>
+            <p:dataTable value="#{frontAr.lista}" var="ar" rowIndexVar="cont">
+                <p:column headerText="Index">
+                    <p:outputLabel value="#{cont+1}"></p:outputLabel>
+                </p:column>
+                  <p:column headerText="Nome">
+                      <p:outputLabel value="#{ar.name}"></p:outputLabel>
+                </p:column>
+                <p:column headerText="Ligado">
+                    <p:outputLabel value="#{ar.ligado}"></p:outputLabel>
+                </p:column>
+                <p:column headerText="Operação">
+                    <p:outputLabel value="#{ar.operacao}"></p:outputLabel>
+                </p:column>
+                <p:column headerText="Temperatura">
+                    <p:outputLabel value="#{ar.temperatura}"></p:outputLabel>
+                </p:column>
+                <p:column headerText="Velocidade">
+                    <p:outputLabel value="#{ar.velocidade}"></p:outputLabel>
+                </p:column>
+                <p:column headerText="Selecionar">
+                    <p:commandButton value="Selecionar" update=":formSelecionado" actionListener="#{frontAr.selecionar(cont)}"/>
+                </p:column>
+            </p:dataTable>
+        </h:form>
+
+        <h:form id="formSelecionado">
+            <p:growl/>
+            <p:panel header="Ar Selecionado">
+                <p:panelGrid columns="2">
+                    <p:outputLabel value="Nome"/>
+                    <p:outputLabel value="#{frontAr.arSelecionado.name}"/>
+                    
+                    <p:outputLabel value="Ligado"/>
+                    <p:outputLabel value="#{frontAr.arSelecionado.ligado}"/>
+
+                    <p:outputLabel value="Operação"/>
+                    <p:outputLabel value="#{frontAr.arSelecionado.operacao}"/>
+
+                    <p:outputLabel value="Velocidade"/>
+                    <p:outputLabel value="#{frontAr.arSelecionado.velocidade}"/>
+
+                    <p:outputLabel value="Temperatura"/>
+                    <p:outputLabel value="#{frontAr.arSelecionado.temperatura}"/>   
+                </p:panelGrid>
+            </p:panel>
+            
+            
+            <p:commandButton value="Ligar" update="formSelecionado :form" 
+                             actionListener="#{frontAr.operacao('ligar')}"/>
+            <p:commandButton value="Desligar" update="formSelecionado :form" 
+                              actionListener="#{frontAr.operacao('desligar')}"/>
+            <p:commandButton value="+ Temp" update="formSelecionado :form" 
+                             actionListener="#{frontAr.operacao('+ temp')}"/>
+            <p:commandButton value="- Temp" update="formSelecionado :form" 
+                              actionListener="#{frontAr.operacao('- temp')}"/>
+            <p:commandButton value="+ Vel" update="formSelecionado :form" 
+                              actionListener="#{frontAr.operacao('+ vel ')}"/>
+            <p:commandButton value="- Vrel" update="formSelecionado :form" 
+                              actionListener="#{frontAr.operacao('- vel')}"/>
+            <p:commandButton value="Operacão" update="formSelecionado :form" 
+                              actionListener="#{frontAr.operacao('oper')}"/>
+        </h:form>
+
+    </h:body>
+</html>
+

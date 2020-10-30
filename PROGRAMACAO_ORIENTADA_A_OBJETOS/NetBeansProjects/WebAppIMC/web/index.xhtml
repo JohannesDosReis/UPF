@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html" xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>IMC</title>
+    </h:head>
+    <h:body>  
+        <h:form id="form">
+
+            <h3>Nome</h3>
+            <p:inputText id="nome-input" value="#{frontImc.nomeNovo}" />
+
+            <h3>Altura</h3>
+            <p:inputText id="altura-input" value="#{frontImc.alturaNovo}" />
+
+            <h3>Peso</h3>
+            <p:inputText id="peso-input" value="#{frontImc.pesoNovo}" />
+            <br/>
+            <p:commandButton value="Novo IMC" update="form :formList :formSelecionado" actionListener="#{frontImc.criarImc()}"/>
+        </h:form>
+           
+         <h:form id="formSelecionado">
+            <p:growl/>
+            <p:panel header="IMC Selecionado">
+                <p:panelGrid columns="2">
+                    <p:outputLabel value="Indice"/>
+                    <p:outputLabel value="#{frontImc.imcSelecionado.indiceImc}"/>
+                    
+                    <p:outputLabel value="Interpretação"/>
+                    <p:outputLabel value="#{frontImc.imcSelecionado.interpretacao}"/>
+  
+                </p:panelGrid>
+            </p:panel>
+         </h:form>
+            
+        <h:form id="formList">
+            <p:dataTable value="#{frontImc.lista}" var="imc" rowIndexVar="cont">
+                <p:column headerText="Index">
+                    <p:outputLabel value="#{cont+1}"></p:outputLabel>
+                </p:column>
+                <p:column headerText="Nome">
+                    <p:outputLabel value="#{imc.nome}"></p:outputLabel>
+                </p:column>
+                <p:column headerText="Peso">
+                    <p:outputLabel value="#{imc.peso}"></p:outputLabel>
+                </p:column>
+                <p:column headerText="Altura">
+                    <p:outputLabel value="#{imc.altura}"></p:outputLabel>
+                </p:column>
+                <p:column headerText="Indice">
+                    <p:outputLabel value="#{imc.indiceImc}"></p:outputLabel>
+                </p:column>
+                <p:column headerText="Interpretação">
+                    <p:outputLabel value="#{imc.interpretacao}"></p:outputLabel>
+                </p:column>
+            </p:dataTable>
+        </h:form>
+    </h:body>
+
+</html>
