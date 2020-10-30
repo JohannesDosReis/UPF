@@ -1,0 +1,4 @@
+[submodule "SISTEMAS_EMBARCADOS/mapeador_tarefas"]
+	url = https://github.com/JohannesDosReis/mapeador_tarefas.git
+[submodule "ENGENHARIA_DE_SOFTWARE/WebIRRemoteControl"]
+	url = https://johannesreis.visualstudio.com/WebIRRemoteControl/_git/WebIRRemoteControl
