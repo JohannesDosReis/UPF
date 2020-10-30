@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.2 (64-bit)
+# SW Build 2348494 on Mon Oct  1 18:25:44 MDT 2018
+# IP Build 2318053 on Mon Oct  1 21:44:26 MDT 2018
+# Start of session at: Mon Nov 26 11:37:15 2018
+# Process ID: 16432
+# Current directory: C:/Users/Johannes/Desktop/VHDL/Aula 5/Alarme de Carro/Alarme de Carro.runs/impl_1
+# Command line: vivado.exe -log alarme_carro.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source alarme_carro.tcl -notrace
+# Log file: C:/Users/Johannes/Desktop/VHDL/Aula 5/Alarme de Carro/Alarme de Carro.runs/impl_1/alarme_carro.vdi
+# Journal file: C:/Users/Johannes/Desktop/VHDL/Aula 5/Alarme de Carro/Alarme de Carro.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source alarme_carro.tcl -notrace

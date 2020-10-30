@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Nov 14 16:56:15 2018
+# Process ID: 11468
+# Current directory: C:/Users/169050/Desktop/VHDL/Aula 2/Decodificador
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11624 C:\Users\169050\Desktop\VHDL\Aula 2\Decodificador\Decodificador.xpr
+# Log file: C:/Users/169050/Desktop/VHDL/Aula 2/Decodificador/vivado.log
+# Journal file: C:/Users/169050/Desktop/VHDL/Aula 2/Decodificador\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/169050/Desktop/VHDL/Aula 2/Decodificador/Decodificador.xpr}
+update_compile_order -fileset sources_1

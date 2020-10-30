@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Nov  5 15:12:29 2018
+# Process ID: 3200
+# Current directory: C:/Users/169050/Desktop/VHDL/Aula 1/Circuito_2/Circuito_2.runs/impl_1
+# Command line: vivado.exe -log Porta_2.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Porta_2.tcl -notrace
+# Log file: C:/Users/169050/Desktop/VHDL/Aula 1/Circuito_2/Circuito_2.runs/impl_1/Porta_2.vdi
+# Journal file: C:/Users/169050/Desktop/VHDL/Aula 1/Circuito_2/Circuito_2.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Porta_2.tcl -notrace
